@@ -2,26 +2,52 @@
 <html>
   <head>
     <title>FirstRailsAppp</title>
-    <%= csrf_meta_tags %>
-
+      <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- custom css file link -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     <!-- javascript links go here -->
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     <!-- fonts go here -->
+    <link href="https://fonts.googleapis.com/css?family=Cutive|Roboto|Clicker+Script" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <%= csrf_meta_tags %>
   </head>
 
   <body>
-  <nav>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-    <li>Faq</li>
-  </ul>
-</nav>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data target=".navbar-collapse">
+            <span class="sr-only">toggle nav</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="projectName navbar-brand">
+            <a href="#">Andora.B</a>
+          </div> <!-- /projectName -->
+        </div> <!-- /navbar header -->
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", static_pages_about_path %></li>
+            <li><%= link_to "Contact", static_pages_contact_path %></li>
+          </ul>
+        </div> <!-- /navbar collapse -->
+      </div> <!-- /container-fluid -->
+    </nav> <!-- /navbar -->
 
     <%= yield %>
 
-    <footer>
-  &copy; 2017 Bike Zürich
-</footer>
+    <footer class="site_footer">
+      <div class="container-fluid bar">
+        <div class="footer-element">&copy; Bike Zürich 2017</div>
+      </div>
+    </footer>
+
+
   </body>
 </html>
