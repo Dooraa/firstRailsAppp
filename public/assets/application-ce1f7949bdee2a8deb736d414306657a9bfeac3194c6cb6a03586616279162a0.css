@@ -1,0 +1,75 @@
+/* line 2, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  color: darkslategray;
+}
+
+/* line 9, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+h2 {
+  font-family: Courier new, Arial, sans-serif;
+  color: darkslategray;
+  text-align: center;
+}
+
+/* line 15, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: large;
+  text-align: center;
+  color: black;
+}
+
+/* line 23, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+.navbar a {
+  color: white;
+}
+
+/* line 27, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+img {
+  margin: 3em auto;
+}
+
+/* line 31, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+site_footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100;
+}
+
+/* line 38, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+.footer-element {
+  display: inline-block;
+  float: right;
+  padding: 0 5px;
+}
+
+/* line 44, /Users/andoraberisha/firstRailsAppp/app/assets/stylesheets/static_pages.scss */
+.bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 15px;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
